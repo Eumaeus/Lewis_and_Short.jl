@@ -12,11 +12,11 @@ This is an implementation of a web-application for consulting [*A Latin Dictiona
 
 \* In "entirely offline mode", the app will not be able to download the EB Garamond font from Google, so the text will not be as attractive as it might be.
 
-## Running *LSJ* on Your Machine
+## Running *Lewis & Short* on Your Machine
 
 1. Download [Julia](https://julialang.org/downloads/) and do whatever it takes to install it.
 2. Clone this repository.
-3. In a terminal, `cd` into `LSJ.jl`, *e.g.* `cd ~/Desktop/LSJ.jl`, if you cloned the repository onto your Desktop.
+3. In a terminal, `cd` into `Lewis_and_Short.jl`, *e.g.* `cd ~/Desktop/Lewis_and_Short.jl`, if you cloned the repository onto your Desktop.
 4. In the terminal: `julia dashboard/lewisshort.jl`.
 5. When it is up and running (the initial load may take a while, as it downloads and compiles necessary libraries), visit `http://localhost:8054/` in your browser.
 
