@@ -22,6 +22,6 @@ This is an implementation of a web-application for consulting [*A Latin Dictiona
 
 ## Bugs or Errors in Data
 
-You can report bugs in the program, or errors in data, by [submitting an Issue on GitHub](https://github.com/Eumaeus/LSJ.jl/issues).
+You can report bugs in the program, or errors in data, by [submitting an Issue on GitHub](https://github.com/Eumaeus/Lewis_and_Short.jl/issues).
 
 
