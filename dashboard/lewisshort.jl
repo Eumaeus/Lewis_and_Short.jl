@@ -40,7 +40,7 @@ end
 function load_data()
     #lsj_gh_url = "https://raw.githubusercontent.com/Eumaeus/cite_lsj_cex/master/lsj_chicago.cex"
     #lsj_data = string_dl(lsj_gh_url)
-    lsj_path = joinpath(assetsfolder, "lexicon.cex")
+    lsj_path = joinpath(assetsfolder, "ls.cex")
     lsj_data = string_load(lsj_path)
     #=
     lsj_data = begin
@@ -52,7 +52,7 @@ function load_data()
     =#
     lsj_coll = fromcex(lsj_data, RawDataCollection, delimiter = "#")[2]
 
-    idx_path = joinpath(assetsfolder, "new_index.txt")
+    idx_path = joinpath(assetsfolder, "ls_indexData.txt")
     idx_data = string_load(idx_path)
     lsj_index = begin
         idx_lines = split(idx_data, "\n")
