@@ -2,8 +2,6 @@
 
 ![version 1.0.0](https://img.shields.io/badge/LewisShort-1.0.0-orange) ![Julia 1.7.3](https://img.shields.io/badge/Julia-1.7.3-green)
 
-**Initial Development… this does not work yet!**
-
 This is an implementation of a web-application for consulting [*A Latin Dictionary.* Founded on Andrews’ edition of Freund's Latin dictionary, revised, enlarged, and in great part rewritten by Charlton T. Lewis, Ph.D., and Charles Short, LL.D. (Oxford: Clarendon Press, 1879).](https://en.wikipedia.org/wiki/A_Latin_Dictionary). It is written in [Julia](https://julialang.org) with the [Dash framework](https://dash.plotly.com/julia/introduction). It is the successor to an [earlier version](http://folio2.furman.edu/lewis-short/index.html), written in [ScalaJS](https://www.scala-js.org) (See, [this blog post about that earlier version, and the data behind it](https://eumaeus.github.io/2018/10/30/lsj.html))
 
 ## Why Rewrite a Working App in Julia?
