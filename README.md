@@ -1,6 +1,6 @@
 # Lewis & Short (Julia)
 
-![version 0.1.0](https://img.shields.io/badge/LewisShort-0.1.0-orange) ![Julia 1.7.3](https://img.shields.io/badge/Julia-1.7.3-green)
+![version 1.0.0](https://img.shields.io/badge/LewisShort-1.0.0-orange) ![Julia 1.7.3](https://img.shields.io/badge/Julia-1.7.3-green)
 
 **Initial Development… this does not work yet!**
 
