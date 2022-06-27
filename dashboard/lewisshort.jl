@@ -58,10 +58,10 @@ function load_data()
         idx_lines = split(idx_data, "\n")
         map(idx_lines) do ll 
             idx_split = split(ll, "#")
-            idx_lemma = idx_split[1]
-            idx_key = idx_split[2]
-            idx_urn::Cite2Urn = Cite2Urn(idx_split[3])
-            idx_terms = idx_split[4]
+            idx_lemma = idx_split[2]
+            idx_key = lowercase(idx_split[2])
+            idx_urn::Cite2Urn = Cite2Urn(idx_split[1])
+            idx_terms = lowercase(replace(idx_split[2], r"[0-9]" => ""))
 
             (idx_key, idx_lemma, idx_urn, idx_terms)
 
@@ -107,7 +107,7 @@ app.layout = html_div(className = "w3-container") do
     html_article( id = "main_Container") do 
         dcc_markdown( 
             id = "menu",
-            """[The Lewis &amp; Short Latin /Dictionary](http://folio2.furman.edu/lewis-short/index.html) | [The CITE Architecture](http://cite-architecture.github.io) | [About this project](https://eumaeus.github.io/2018/10/30/lsj.html)"""
+            """[The LSJ Greek Lexicon](http://folio2.furman.edu/lsj/) | [The CITE Architecture](http://cite-architecture.github.io) | [About this project](https://eumaeus.github.io/2018/10/30/lsj.html)"""
         ),
         alphaMenu,
         #html_ul( id = "volumeList", className = "greekFont"),

@@ -47,7 +47,7 @@ selectedUrnDiv = html_div( id = "selectedUrnDiv") do
 end
 
 searchDiv = html_div( id = "searchDiv" ) do 
-	html_label( className="inputLabel", htmlFor="greekInput", "Search Greek:"),
+	html_label( className="inputLabel", htmlFor="greekInput", "Search Latin Entries:"),
 	dcc_input( className="inputLabel", id="greekInput", debounce = false, autoComplete="off", type="text", size="18", value=""),
 	html_span( id="greekOutput", "Nothing typed")
 end
@@ -60,7 +60,7 @@ end
 
 passageInputDiv = html_div( id = "passageInputDiv" ) do 
 	html_label( className="invalidPassage inputLabel", htmlFor="passageInput", "Retrieve by URN:"),
-	dcc_input( className="inputLabel", id="passageInput", autoComplete="off", type="text", size="30", placeholder = "urn:cite2:hmt:lsj.chicago_md:n147"),
+	dcc_input( className="inputLabel", id="passageInput", autoComplete="off", type="text", size="30", placeholder = "urn:cite2:hmt:ls.markdown:n21247"),
 	html_button( id="querySubmit", disabled=true, value = "",  "Enter a valid URN")
 end
 

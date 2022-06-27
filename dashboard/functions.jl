@@ -13,7 +13,7 @@ function makeOption( l::String, u::Cite2Urn )
     (label = l, value = "$u")
 end 
 
-function makeOption( l::SubString{String}, u::Cite2Urn )
+function makeOption( l, u::Cite2Urn )
     (label = l, value = "$u")
 end 
 
@@ -32,7 +32,7 @@ end
 
 function filterLexIndex(greekString::String , idx = lsj_keys)
     filter(idx) do item
-        startswith(transcodeGreek(item[1]), greekString)
+        startswith(item[1], greekString)
     end
 end
 
@@ -72,10 +72,8 @@ function firstLetterForUrn(u::Cite2Urn, lexKeys = lsj_keys)::String
     if (length(lexEntries) < 1 ) ""
     else 
         thisKey = string(lexEntries[1][1][1])
-        tempFirst = transcodeGreek(thisKey)
-        if (tempFirst == "ς") "σ"
-        else tempFirst
-        end
+        tempFirst = thisKey
+        tempFirst
     end
 end
 
@@ -88,7 +86,7 @@ end
 # Functions for searching and retrieving
 #   All of these use the lex_index, for speed and responsiveness
 
-function lemmaEquals(s::String, idx::Vector{Tuple{SubString{String}, SubString{String}, CitableObject.Cite2Urn, SubString{String}}} = lsj_keys)::Vector{Tuple{String, Cite2Urn}}
+function lemmaEquals(s, idx = lsj_keys)
 
     foundItems = begin
         filter(idx) do item

@@ -119,7 +119,7 @@ div#menu p {
 	font-size: 80%;	
 	margin: 0;
 	padding: 0;
-	color: maroon;
+	color: rgb(96, 0, 0);
 	margin-bottom: 1em;
 }
 
@@ -154,9 +154,12 @@ span.lsjpn:after {
 }
 
 span#greekOutput {
-	color: maroon;
+	color: rgb(96, 0, 0);
 	font-size: 75%;
+	visibility: hidden;
 }
+
+/*
 span#greekOutput:before {
 	content: "[ ";
 	color: silver;
@@ -166,6 +169,7 @@ span#greekOutput:after {
 	content: " ]";
 	color: silver;
 }
+*/
 
 div#searchDiv, div#searchEnglishDiv, div#passageInputDiv {
 	max-width: 20em;
@@ -174,7 +178,7 @@ div#searchDiv, div#searchEnglishDiv, div#passageInputDiv {
 
 label.inputLabel {
 	display: block;
-	color: maroon;
+	color: rgb(96, 0, 0);
 	font-size: 85%;
 	width:  12em;
 }
@@ -241,7 +245,7 @@ div#lexEntryDiv {
 
 p.lexEntryLabel {
 	font-size: 150%;
-	color: maroon;
+	color: rgb(96, 0, 0);
 	font-weight: 600;
 	margin: 0;
 	margin-top: 0.5em;
@@ -264,7 +268,7 @@ span.lexEntryLink {
 }
 
 span.lexEntryLink a {
-	color: maroon;
+	color: rgb(96, 0, 0);
 	text-decoration: none;
 }
 
@@ -290,7 +294,7 @@ span.lexEntryUrn:hover:before {
 
 
 span.lexEntryUrn a {
-	color: maroon;
+	color: rgb(96, 0, 0);
 	text-decoration: none;
 }
 
@@ -304,13 +308,13 @@ span.lexEntryUrn:hover a {
 }
 
 span.lexEntryUrn:hover, span.lexEntryLink:hover {
-	border: 1px solid maroon;
-	background-color: maroon;
+	border: 1px solid rgb(96, 0, 0);
+	background-color: rgb(96, 0, 0);
 	color: white;
 }
 span.lexEntryUrn:active {
-	border: 1px solid maroon;
-	background-color: maroon;
+	border: 1px solid rgb(96, 0, 0);
+	background-color: rgb(96, 0, 0);
 	color: rgb(255, 240, 194);
 }
 
@@ -328,8 +332,8 @@ div#resultsList label {
 	/*background-color: rgba(232, 232, 232, 0.5);*/
 	/*border: 1px solid rgba(200, 200, 200, 0.5);*/
 	background-color:  white;
-	border:  1px solid maroon;
-	color: maroon;
+	border:  1px solid rgb(96, 0, 0);
+	color: rgb(96, 0, 0);
 	display: inline-block;
 	margin: 4px;
 	margin-left:  0.3em;
@@ -341,7 +345,7 @@ div#resultsList label {
 
 ul#resultsList li:hover, div#resultsList label:hover  {
 	background-color:  white;
-	border: 2px solid maroon;
+	border: 2px solid rgb(96, 0, 0);
 	cursor: pointer;
 }
 
@@ -356,15 +360,15 @@ div#resultsList label input[type="radio"]:checked::before {
 
 
 ul#resultsList li.selected {
-	border: 1px solid maroon;
-	background-color: maroon;
+	border: 1px solid rgb(96, 0, 0);
+	background-color: rgb(96, 0, 0);
 	color: rgb(255, 240, 194);
 	cursor: pointer;
 }
 
 ul#resultsList li:active, div#resultsList label:active {
-	border: 1px solid maroon;
-	background-color: maroon;
+	border: 1px solid rgb(96, 0, 0);
+	background-color: rgb(96, 0, 0);
 	color: rgb(255, 240, 194);
 	cursor: pointer;
 }
@@ -399,7 +403,7 @@ li.inTerms {
 
 ul#resultsList, div#resultsList {
 	font-size: 80%;
-	color: maroon;
+	color: rgb(96, 0, 0);
 	margin-left: 0;
 	padding-left: 0;
 	max-width:  81%;
@@ -440,7 +444,7 @@ div#alphaList label input:checked, div#volumeList label input:checked {
 }
 
 div#alphaList label, div#volumeList label, div#volumeList label, div#volumeList label {
-	color:  maroon;
+	color:  rgb(96, 0, 0);
 	font-size:  80%;
 	margin:  0;
 	padding:  0;
@@ -466,7 +470,7 @@ div#alphaList label input, div#volumeList label input, div#resultsList label inp
   background-color: #fff;
   /* Not removed via appearance */
   margin: 0;
-  color:  maroon;
+  color:  rgb(96, 0, 0);
 
 }
 
@@ -474,7 +478,7 @@ div#alphaList label input, div#volumeList label input, div#resultsList label inp
 ul#alphaList, div#alphaList {
 	float: left;
 	list-style: none;
-	color: maroon;
+	color: rgb(96, 0, 0);
 	margin-left: 0;
 	padding-left: 1em;
 	width: 3em;
@@ -485,7 +489,7 @@ ul#alphaList, div#alphaList {
 div#volumeList, ul#volumeList {
 	float: left;
 	list-style: none;
-	color: maroon;
+	color: rgb(96, 0, 0);
 	margin-left: 0;
 	padding-left: 1em;
 	width: 6em;
@@ -515,7 +519,7 @@ ul#alphaList li:hover, ul#volumeList li:hover {
 }
 
 ul#alphaList li.selected, ul#volumeList li.selected {
-	background-color: maroon;
+	background-color: rgb(96, 0, 0);
 	color: white;
 	cursor: pointer;
 }
@@ -1513,7 +1517,7 @@ label {
 }
 
 input[type=submit]:active {
-		color: maroon;
+		color: rgb(96, 0, 0);
 }
 
 input[type=submit]:hover {
@@ -1555,7 +1559,7 @@ header {
 	line-height: 1.2em;
 	padding: 10px;
 	font-weight: normal;
-	background-color: maroon;
+	background-color: rgb(96, 0, 0);
 	color: rgb(255, 240, 194);
 }
 
@@ -1936,7 +1940,7 @@ w {
 }
 
 sic {
-	color: maroon;
+	color: rgb(96, 0, 0);
 }
 
 sic:after{
