@@ -18,7 +18,7 @@ This is an implementation of a web-application for consulting [*A Latin Dictiona
 2. Clone this repository.
 3. In a terminal, `cd` into `Lewis_and_Short.jl`, *e.g.* `cd ~/Desktop/Lewis_and_Short.jl`, if you cloned the repository onto your Desktop.
 4. In the terminal: `julia dashboard/lewisshort.jl`.
-5. When it is up and running (the initial load may take a while, as it downloads and compiles necessary libraries), visit `http://localhost:8054/` in your browser.
+5. When it is up and running (the initial load may take a while, as it downloads and compiles necessary libraries), visit `http://localhost:8055/` in your browser.
 
 ## Bugs or Errors in Data
 
